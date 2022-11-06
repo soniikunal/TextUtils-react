@@ -1,15 +1,15 @@
 // import logo from './logo.svg';
 import './App.css';
-import About from './Components/About';
+// import About from './Components/About';
 import Navbar from './Components/navbar';
 import Textform from './Components/Textform';
 import React,{useState} from 'react'
 import Alert from './Components/Alert';
-import {
-  BrowserRouter as Router,
-  Routes ,
-  Route
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes ,
+//   Route
+// } from "react-router-dom";
 
 
 
@@ -44,14 +44,15 @@ const toggleMode = ()=>{
 
   return (
     <>
-    <Router>
+    {/* <Router> */}
 <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
 <Alert alert= {alert} />
-      <Routes >
-        <Route exact path="/about" element={<About/>} />
-        <Route path='/' element={<Textform mode={mode} showAlert={showAlert} heading="Text Box"/>}/>
-        </Routes>
-</Router>
+<Textform mode={mode} showAlert={showAlert} heading="Text Box"/>
+      {/* <Routes > */}
+        {/* <Route exact path="/about" element={<About/>} /> */}
+        {/* <Route path='/' element={<Textform mode={mode} showAlert={showAlert} heading="Text Box"/>}/> */}
+        {/* </Routes> */}
+{/* </Router> */}
 </>
 );
 }

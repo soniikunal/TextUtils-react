@@ -1,5 +1,6 @@
 {
-  "name": "reactcourse",
+  "homepage": "https://soniikunal.github.io/TextUtils-react",
+  "name": "TextUtils",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
